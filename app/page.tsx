@@ -2,23 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
-import workData from "@/lib/data/work.json";
 import { PortfolioParallax } from "@/components/pages/home/portfolio-parallax";
-
-export type WorkItem = {
-  slug: string;
-  year: string;
-  role: string;
-  company: string;
-  title: string;
-  description: string;
-  challenge?: string;
-  solution?: string;
-  results?: string[];
-  tech: string[];
-  demoLink?: string;
-  images?: string[];
-};
 
 export default function Home() {
   const [isDark, setIsDark] = useState(true);
@@ -53,7 +37,6 @@ export default function Home() {
     setIsDark(!isDark);
   };
 
-  const workItems: WorkItem[] = workData;
 
   return (
     <div className="min-h-screen bg-background text-foreground relative">
@@ -220,136 +203,7 @@ export default function Home() {
           // className="min-h-screen py-20 sm:py-32 opacity-0"
         >
           <PortfolioParallax/>
-          {/* <div className="space-y-12 sm:space-y-16">
-            <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-              <h2 className="text-3xl sm:text-4xl font-light">Selected Work</h2>
-              <div className="text-sm text-muted-foreground font-mono">
-                2019 — 2025
-              </div>
-            </div>
-
-            <div className="space-y-8 sm:space-y-12">
-              {workItems.map((job, index) => (
-                <Link
-                  key={index}
-                  href={`/work/${job.slug}`}
-                  className="group grid lg:grid-cols-12 gap-4 sm:gap-8 py-6 sm:py-8 border-b border-border/50 hover:border-accent/50 transition-all duration-500 cursor-pointer"
-                >
-                  <div className="lg:col-span-2">
-                    <div className="text-xl sm:text-2xl font-light text-muted-foreground group-hover:text-accent transition-colors duration-500">
-                      {job.year}
-                    </div>
-                  </div>
-
-                  <div className="lg:col-span-6 space-y-3">
-                    <div>
-                      <h3 className="text-lg sm:text-xl font-medium group-hover:text-accent transition-colors duration-500">
-                        {job.role}
-                      </h3>
-                      <div className="text-muted-foreground">{job.company}</div>
-                    </div>
-                    <p className="text-muted-foreground leading-relaxed max-w-lg">
-                      {job.description}
-                    </p>
-                  </div>
-
-                  <div className="lg:col-span-4 flex flex-wrap gap-2 lg:justify-end mt-2 lg:mt-0">
-                    {job.tech.map((tech) => (
-                      <span
-                        key={tech}
-                        className="px-2 py-1 text-xs text-muted-foreground rounded group-hover:text-accent group-hover:border-accent/50 transition-colors duration-500"
-                      >
-                        {tech}
-                      </span>
-                    ))}
-                  </div>
-                </Link>
-              ))}
-            </div>
-          </div> */}
         </section>
-
-        {/* <section
-          id="thoughts"
-          ref={(el) => {
-            sectionsRef.current[3] = el;
-          }}
-          className="min-h-screen py-20 sm:py-32 opacity-0"
-        >
-          <div className="space-y-12 sm:space-y-16">
-            <h2 className="text-3xl sm:text-4xl font-light">Recent Thoughts</h2>
-
-            <div className="grid gap-6 sm:gap-8 lg:grid-cols-2">
-              {[
-                {
-                  title: "The Future of Web Development",
-                  excerpt:
-                    "Exploring how AI and automation are reshaping the way we build for the web.",
-                  date: "Dec 2024",
-                  readTime: "5 min",
-                },
-                {
-                  title: "Design Systems at Scale",
-                  excerpt:
-                    "Lessons learned from building and maintaining design systems across multiple products.",
-                  date: "Nov 2024",
-                  readTime: "8 min",
-                },
-                {
-                  title: "Performance-First Development",
-                  excerpt:
-                    "Why performance should be a first-class citizen in your development workflow.",
-                  date: "Oct 2024",
-                  readTime: "6 min",
-                },
-                {
-                  title: "The Art of Code Review",
-                  excerpt:
-                    "Building better software through thoughtful and constructive code reviews.",
-                  date: "Sep 2024",
-                  readTime: "4 min",
-                },
-              ].map((post, index) => (
-                <article
-                  key={index}
-                  className="group p-6 sm:p-8 border border-border rounded-lg hover:border-accent/50 transition-all duration-500 hover:shadow-lg cursor-pointer"
-                >
-                  <div className="space-y-4">
-                    <div className="flex items-center justify-between text-xs text-muted-foreground font-mono">
-                      <span>{post.date}</span>
-                      <span>{post.readTime}</span>
-                    </div>
-
-                    <h3 className="text-lg sm:text-xl font-medium group-hover:text-accent transition-colors duration-300">
-                      {post.title}
-                    </h3>
-
-                    <p className="text-muted-foreground leading-relaxed">
-                      {post.excerpt}
-                    </p>
-
-                    <div className="flex items-center gap-2 text-sm text-accent group-hover:text-accent/80 transition-colors duration-300">
-                      <span>Read more</span>
-                      <svg
-                        className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth={2}
-                          d="M17 8l4 4m0 0l-4 4m4-4H3"
-                        />
-                      </svg>
-                    </div>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section> */}
 
         <section
           id="connect"
