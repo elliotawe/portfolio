@@ -7,114 +7,45 @@ export function PortfolioParallax() {
 }
 export const products = [
   {
-    title: "Servers Rally 2025",
+    title: "AI Trend Discovery Engine",
     link: "https://serversrally25.live",
-    thumbnail:
-      "/showcase/servers-rally.png",
+    thumbnail: "/showcase/servers-rally.png",
+    impact: "Analyzed 10k+ social trends using OpenAI"
   },
   {
-    title: "Stanstead Company limited",
+    title: "Eco-Friendly Logistics Platform",
     link: "https://stanstead.vercel.app/",
-    thumbnail:
-      "/showcase/stanstead.png",
+    thumbnail: "/showcase/stanstead.png",
+    impact: "Reduced logistics waste by 15% through smart routing"
   },
   {
-    title: "Lumo Sage",
+    title: "Lumo Sage: AI Learning Assistant",
     link: "https://lumo-sage.vercel.app",
-    thumbnail:
-      "/showcase/lumo.png",
+    thumbnail: "/showcase/lumo.png",
+    impact: "Personalized learning paths for 500+ students"
   },
-
   {
-    title: "Cany Visuals",
+    title: "Cany Visuals: Creative Portfolio",
     link: "https://cany.vercel.app/",
-    thumbnail:
-      "/showcase/cany.png",
+    thumbnail: "/showcase/cany.png",
+    impact: "High-performance gallery with 99 Lighthouse score"
   },
   {
-    title: "Email Calm",
+    title: "Email Calm: Inbox Peace",
     link: "https://emailcalm.vercel.app",
-    thumbnail:
-      "/showcase/emailcalm.png",
+    thumbnail: "/showcase/emailcalm.png",
+    impact: "Summarized 1M+ emails using NLP"
   },
   {
-    title: "PartyO",
+    title: "PartyO: Event Coordination AI",
     link: "https://partyo.vercel.app",
-    thumbnail:
-      "/showcase/partyo.png",
+    thumbnail: "/showcase/partyo.png",
+    impact: "Automated event planning workflows"
   },
   {
-    title: "Alle",
+    title: "Alle: Intelligent CRM",
     link: "https://alle-one.vercel.app",
-    thumbnail:
-      "/showcase/alle.png",
-  },
-//   {
-//     title: "Editrix AI",
-//     link: "https://editrix.ai",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/editrix.png",
-//   },
-//   {
-//     title: "Pixel Perfect",
-//     link: "https://app.pixelperfect.quest",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/pixelperfect.png",
-//   },
-
-//   {
-//     title: "Algochurn",
-//     link: "https://algochurn.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/algochurn.png",
-//   },
-//   {
-//     title: "Aceternity UI",
-//     link: "https://ui.aceternity.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/aceternityui.png",
-//   },
-//   {
-//     title: "Tailwind Master Kit",
-//     link: "https://tailwindmasterkit.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/tailwindmasterkit.png",
-//   },
-//   {
-//     title: "SmartBridge",
-//     link: "https://smartbridgetech.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/smartbridge.png",
-//   },
-//   {
-//     title: "Renderwork Studio",
-//     link: "https://renderwork.studio",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/renderwork.png",
-//   },
-
-//   {
-//     title: "Creme Digital",
-//     link: "https://cremedigital.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/cremedigital.png",
-//   },
-//   {
-//     title: "Golden Bells Academy",
-//     link: "https://goldenbellsacademy.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/goldenbellsacademy.png",
-//   },
-//   {
-//     title: "Invoker Labs",
-//     link: "https://invoker.lol",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/invoker.png",
-//   },
-//   {
-//     title: "E Free Invoice",
-//     link: "https://efreeinvoice.com",
-//     thumbnail:
-//       "https://aceternity.com/images/products/thumbnails/new/efreeinvoice.png",
-//   },
+    thumbnail: "/showcase/alle.png",
+    impact: "Boosted sales productivity by 25%"
+  }
 ];

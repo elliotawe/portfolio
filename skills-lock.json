@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "skills": {
+    "seo-optimizer": {
+      "source": "ailabs-393/ai-labs-claude-skills",
+      "sourceType": "github",
+      "computedHash": "b5076608b80f436d87aafc273c94107146d9db1e86282239d3c38c8ce5487845"
+    }
+  }
+}
