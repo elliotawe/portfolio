@@ -133,19 +133,24 @@ export function Hero() {
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(ellipse_60%_50%_at_50%_45%,rgba(47,111,255,0.08),transparent)]" />
 
       <div ref={nameRef} className="will-change-transform">
-        <div className="text-[clamp(72px,16vw,220px)] font-semibold leading-none tracking-[-0.04em] select-none text-white font-sans">
-          {HERO_NAME.split("").map((letter, i) => (
-            <span
-              key={i}
-              ref={(el) => {
-                letterRefs.current[i] = el;
-              }}
-              className="inline-block"
-            >
-              {letter}
-            </span>
-          ))}
-        </div>
+        <h1
+          aria-label="Elliot Awe — Full-Stack & AI Engineer"
+          className="text-[clamp(72px,16vw,220px)] font-semibold leading-none tracking-[-0.04em] select-none text-white font-sans"
+        >
+          <span aria-hidden="true">
+            {HERO_NAME.split("").map((letter, i) => (
+              <span
+                key={i}
+                ref={(el) => {
+                  letterRefs.current[i] = el;
+                }}
+                className="inline-block"
+              >
+                {letter}
+              </span>
+            ))}
+          </span>
+        </h1>
       </div>
 
       <div ref={roleRef} className="mt-8 text-lg md:text-2xl font-light text-white/70">

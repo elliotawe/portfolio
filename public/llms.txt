@@ -1,0 +1,29 @@
+# Elliot Awe
+
+> Full-Stack & AI Engineer based in Accra, Ghana, building intelligent applications
+> across the entire stack — from interfaces to scalable systems to AI-driven products.
+
+Elliot Awe is a software engineer specializing in Next.js, AI agent architectures,
+retrieval-augmented generation (RAG), and full-stack product development. Portfolio
+site: https://elliotawe.co
+
+## Main sections
+
+- [Home](https://elliotawe.co): Introduction, skills, and featured work
+- [About](https://elliotawe.co/about): Background, philosophy, and experience
+- [Projects](https://elliotawe.co/projects): Full case-study archive
+
+## Case studies
+
+- [AI Trend Discovery Engine](https://elliotawe.co/projects/ai-trend-discovery): LLM-powered pipeline analyzing 10k+ social media trends with 95% concept-extraction accuracy, built with Next.js, OpenAI, and Apify.
+- [Eco-Friendly Logistics](https://elliotawe.co/projects/eco-logistics): Smart routing platform for sustainable delivery, reducing logistics waste by 15%, built with Laravel and Google Maps API.
+- [Lumo Sage: AI Assistant](https://elliotawe.co/projects/lumo-sage): RAG-based personalized learning companion that helped 500+ students improve test scores by an average of 22%, built with Next.js, Supabase, and LangChain.
+- [Alle: Intelligent CRM](https://elliotawe.co/projects/alle-crm): CRM with automated lead scoring, cutting average sales response time from 4 hours to 15 minutes, built with React and FastAPI.
+- [Cany Visuals](https://elliotawe.co/projects/cany-visuals): High-performance creative portfolio for visual artists achieving a 99 Lighthouse performance score, built with Next.js and Framer Motion.
+
+## Key facts
+
+- Based in Accra, Ghana
+- Core stack: Next.js, TypeScript, React, Node.js, FastAPI, Tailwind CSS
+- AI stack: OpenAI API, LangChain, RAG systems, vector databases, AI agents
+- Contact: elliotawe@outlook.com

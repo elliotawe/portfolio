@@ -16,14 +16,14 @@ export function Contact() {
       ref={ref}
       className="min-h-[90vh] flex flex-col items-center justify-center px-6 text-center"
     >
-      <motion.p
+      <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.9, ease: EASE }}
         className="text-[clamp(32px,6vw,80px)] font-semibold tracking-[-0.03em] text-white max-w-4xl leading-[1.1]"
       >
         Let's build something people remember.
-      </motion.p>
+      </motion.h2>
 
       <motion.div
         initial={{ opacity: 0, y: 16 }}

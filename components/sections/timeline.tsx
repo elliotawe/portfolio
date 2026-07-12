@@ -130,7 +130,7 @@ export function Timeline() {
     >
       <div className="lg:absolute lg:inset-0 flex lg:flex-col items-center justify-center px-6">
         <Reveal>
-          <p className="text-xs tracking-[0.2em] uppercase text-white/30 mb-16 lg:mb-24 text-center">Timeline</p>
+          <h2 className="text-xs tracking-[0.2em] uppercase text-white/30 mb-16 lg:mb-24 text-center">Timeline</h2>
         </Reveal>
 
         <div className="relative flex min-w-[720px] lg:min-w-0 lg:w-full lg:max-w-5xl px-4">

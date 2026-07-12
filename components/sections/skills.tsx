@@ -58,7 +58,7 @@ export function Skills() {
   return (
     <section className="py-32 px-6">
       <Reveal>
-        <p className="text-center text-xs tracking-[0.2em] uppercase text-white/30 mb-16">Toolset</p>
+        <h2 className="text-center text-xs tracking-[0.2em] uppercase text-white/30 mb-16">Toolset</h2>
       </Reveal>
       <SkillCloud onSelect={setFilter} />
       <AnimatePresence>

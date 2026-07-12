@@ -26,14 +26,14 @@ function AweFallback() {
 
   return (
     <div ref={ref} className="relative min-h-screen flex flex-col items-center justify-center px-6 text-center">
-      <motion.div
+      <motion.h2
         initial={{ opacity: 0, y: 20 }}
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 1, ease: EASE }}
         className="text-[clamp(64px,14vw,180px)] font-semibold leading-none tracking-[-0.04em] text-white mb-8"
       >
         Awe
-      </motion.div>
+      </motion.h2>
 
       <div className="h-16 relative max-w-xl">
         <AnimatePresence mode="wait">
@@ -167,7 +167,7 @@ export function Awe() {
 
       <div ref={wrapperRef} className="hidden lg:block relative min-h-screen">
         <div className="absolute inset-0 flex flex-col items-center justify-center px-6 text-center">
-          <div
+          <h2
             ref={aweRef}
             className="text-[clamp(64px,14vw,180px)] font-semibold leading-none tracking-[-0.04em] text-white mb-8"
           >
@@ -192,7 +192,7 @@ export function Awe() {
                 </span>
               </a>
             ))}
-          </div>
+          </h2>
 
           <div className="relative h-16 w-full max-w-xl mx-auto">
             <p ref={jokeRef} className="absolute inset-x-0 text-center whitespace-nowrap text-lg md:text-xl text-white/60 font-light">
