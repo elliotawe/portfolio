@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Geist } from "next/font/google"
+import { Inter, JetBrains_Mono, Geist } from "next/font/google"
 import "./globals.css"
 
 const geist = Geist({
@@ -9,11 +9,23 @@ const geist = Geist({
   variable: "--font-geist",
 })
 
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+})
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-jetbrains-mono",
+})
+
 export const metadata: Metadata = {
   metadataBase: new URL("https://elliotawe.co"),
   title: {
     template: "%s | Elliot Awe",
-    default: "Elliot Awe - Frontend & AI Engineer",
+    default: "Elliot Awe - Full-Stack & AI Engineering",
   },
   description: "Full-Stack & AI Engineer crafting intelligent applications across the entire stack, from intuitive interfaces to scalable systems and AI-driven solutions.",
   keywords: [
@@ -92,7 +104,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${geist.variable}`}>
+    <html lang="en" className={`dark ${geist.variable} ${inter.variable} ${jetbrainsMono.variable}`}>
       <body className="font-sans antialiased text-sm">
         <script
           type="application/ld+json"

@@ -1,49 +1,36 @@
-# Minimalist Portfolio Website
+# Elliot Awe — Portfolio
 
-A clean, modern portfolio website built with Next.js and Tailwind CSS, featuring smooth animations and dark/light theme support.
+An immersive, story-driven portfolio site — one long scroll experience introducing
+Elliot Awe through motion, typography, and storytelling rather than a traditional
+page-by-page layout. Built with Next.js, GSAP/ScrollTrigger, and Lenis smooth
+scrolling.
 
-## ✨ Features
+## Built with
 
-- **Minimalist Design** - Clean typography with Geist font and strategic use of whitespace
-- **Responsive Layout** - Mobile-first design that works on all devices
-- **Theme Toggle** - Seamless dark/light mode switching
-- **Smooth Animations** - Subtle scroll-triggered animations and hover effects
-- **Modern Stack** - Built with Next.js 15, TypeScript, and Tailwind CSS
+- [Next.js](https://nextjs.org/) (App Router) — React framework
+- [TypeScript](https://www.typescriptlang.org/) — type safety
+- [Tailwind CSS v4](https://tailwindcss.com/) — styling
+- [GSAP](https://gsap.com/) + ScrollTrigger — scroll-driven animation
+- [Lenis](https://github.com/darkroomengineering/lenis) — smooth scrolling
+- [Motion](https://motion.dev/) (Framer Motion) — component-level animation where GSAP isn't the better fit
 
-## 🚀 Built With
+## Getting started
 
-- [Next.js](https://nextjs.org/) - React framework
-- [TypeScript](https://www.typescriptlang.org/) - Type safety
-- [Tailwind CSS](https://tailwindcss.com/) - Styling
-- [v0.dev](https://v0.dev/) - AI-powered development
+```bash
+pnpm install
+pnpm dev
+```
 
-## 📦 Getting Started
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-\`\`\`bash
-# Clone the repository
-git clone https://github.com/felixmacaspac/v0-minimalist-portfolio.git
+## Structure
 
-# Install dependencies
-npm install
+- `app/` — routes (home, `/about`, `/projects`, `/projects/[slug]`)
+- `components/sections/` — one component per scroll section of the homepage
+- `animations/` — shared GSAP setup and reveal helpers
+- `constants/` — site copy and content data
+- `lib/projects.ts` — project case-study data backing `/projects`
+- `hooks/` — reduced-motion, tilt, and other shared behavior
 
-# Run development server
-npm run dev
-\`\`\`
-
-Open [http://localhost:3000](http://localhost:3000) to view the portfolio.
-
-## 🎨 Customization
-
-The portfolio is designed to be easily customizable:
-
-- Update personal information in `app/page.tsx`
-- Modify colors and styling in `app/globals.css`
-- Add or remove sections as needed
-
-## 📄 License
-
-Open source and available under the [MIT License](LICENSE).
-
----
-
-**Built with ❤️ using [v0.dev](https://v0.dev) by Felix Macaspac**
+See `flow.md` for the original design brief driving the site's structure and motion
+language.
